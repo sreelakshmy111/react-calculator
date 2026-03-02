@@ -1,14 +1,13 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Region from './components/Region'
+import React from "react";
+import Greeting from "./components/Greeting"; // adjust path if needed
 
-const App = () => {
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Region />} />
-      <Route path="/region" element={<Region />} />
-    </Routes>
-  )
+    <div>
+      <Greeting name="Vismaya" />
+      <Greeting />
+    </div>
+  );
 }
 
-export default App
+export default App;

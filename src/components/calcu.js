@@ -13,7 +13,7 @@ function App() {
     try {
       // eslint-disable-next-line no-eval
       setInput(eval(input).toString());
-     
+    // clear 
     } catch {
       setInput("Error");
     }

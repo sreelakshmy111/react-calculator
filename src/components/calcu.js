@@ -12,9 +12,7 @@ function App() {
 
   const calculate = () => {
     try {
-      /// eslint-disable-next-line no-eval
-setInput(eval(input).toString());
-    // clear 
+      setInput(evaluate(input).toString());
     } catch {
       setInput("Error");
     }

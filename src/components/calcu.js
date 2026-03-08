@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { evaluate } from "mathjs";
 import "./calcu.css";
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
 
   const calculate = () => {
     try {
-      // eslint-disable-next-line no-eval
-      setInput(eval(input).toString());
+      /// eslint-disable-next-line no-eval
+setInput(eval(input).toString());
     // clear 
     } catch {
       setInput("Error");
